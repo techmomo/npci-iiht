@@ -59,6 +59,13 @@ public class Main {
         // facade
         DbFacade.exportDB("SQL");
 
+        // Bridge
+        MyShape octa = new Octagon(new Yellow());
+
+        MyShape myTriangle = new MyTriangle(new Blue());
+
+
+
     }
 }
 

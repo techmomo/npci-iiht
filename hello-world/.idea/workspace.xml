@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62d52585-c53c-4b17-8bcc-522ae4bec2e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/DbFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Drawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/RoundNail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Socket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/SocketAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/SocketAdapterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/SocketComposeAdapterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Sql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/SquareNail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/SquareNailAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Volt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Octagon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Yellow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -34,10 +27,97 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="284">
+              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/DbFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Color.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyShape.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyTriangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+              <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Octagon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="e#117#118#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Blue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Yellow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +169,12 @@
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Sql.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/NoSql.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/DbFacade.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Color.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyShape.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyTriangle.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Octagon.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Blue.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Yellow.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -183,12 +269,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631677623019</updated>
-      <workItem from="1631677624722" duration="9480000" />
+      <workItem from="1631677624722" duration="10154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9480000" />
+    <option name="totallyTimeSpent" value="10154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1792" height="1029" extended-state="0" />
@@ -199,13 +285,13 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17085715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17085715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -591,15 +677,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/DbFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Octagon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/awt/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Blue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Yellow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state relative-caret-position="284">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
