@@ -1,3 +1,4 @@
+import com.mohsinkd786.designpattern.behavioral.*;
 import com.mohsinkd786.designpattern.creational.*;
 import com.mohsinkd786.designpattern.structural.*;
 
@@ -65,7 +66,26 @@ public class Main {
         MyShape myTriangle = new MyTriangle(new Blue());
 
 
+        // Proxy
+        Executor executor = new ExecutorProxy("admin","123");
+        executor.run("Hello Proxy");
 
+
+        // BEHAVIORAL PATTERNS
+
+        // Template Method
+
+        House house = new WoodenHouse();
+        house.buildHouse();
+
+        house = new ConcreteHouse();
+        house.buildHouse();
+
+        // Chain or responsibility
+
+        ATMDispenserChain atmDispenserChain = new ATMDispenserChain();
+        int amount = 5100;
+        atmDispenserChain.getChain().dispense(new Currency(amount));
     }
 }
 
@@ -80,11 +100,28 @@ public class Main {
 *   d. Prototype
 *   e.
 * 2. Structural
-*   a. Adapter
+*   a. Adapter : legacy / code base -> legacy adapter -> connect with -> latest app
 *   b. Composite
+*                   customer id  -> loan ->
+*                                           -> personal
+*                                           -> car
+*                                           -> home
+*
+*                                -> card
+*                                           -> credit card
+*                                                       -> platinum
+*                                                       -> diners
+*                                           -> debit card
+*                                -> Account ->
+*                                               -> current
+*                                               -> saving
 *   c. Proxy
 *   d. Flyweight
-*   e. Facade
+*   e. Facade       sports ->
+*                               cricket ->
+*                                           some rules
+*                               volleyball ->
+*                                           some rules
 *   f. Bridge
 *   g. Decorator
 *
