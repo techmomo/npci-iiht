@@ -1,4 +1,5 @@
 import com.mohsinkd786.designpattern.creational.*;
+import com.mohsinkd786.designpattern.structural.*;
 
 public class Main {
 
@@ -41,6 +42,23 @@ public class Main {
         Employee clone1 = (Employee)emp1.clone();
 
         Employee clone2 = (Employee)emp1.clone();
+
+
+        // composite
+
+        Shape circle = new Circle();
+        Shape square = new Square();
+
+        Drawing drawing = new Drawing();
+        // add the shapes to the drawing board
+        drawing.add(circle);
+        drawing.add(square);
+
+        drawing.draw("Red");
+
+        // facade
+        DbFacade.exportDB("SQL");
+
     }
 }
 
