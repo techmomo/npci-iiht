@@ -86,6 +86,34 @@ public class Main {
         ATMDispenserChain atmDispenserChain = new ATMDispenserChain();
         int amount = 5100;
         atmDispenserChain.getChain().dispense(new Currency(amount));
+
+
+        /// Observer Pattern
+
+        // subject
+        Topic topic = new Topic();
+
+        // define observers
+
+        Observer observer1 = new TopicSubscriber("Obj1");
+        Observer observer2 = new TopicSubscriber("Obj2");
+        Observer observer3 = new TopicSubscriber("Obj3");
+
+        topic.register(observer1);
+        topic.register(observer2);
+        topic.register(observer3);
+
+
+        observer1.setSubject(topic);
+        observer2.setSubject(topic);
+        observer3.setSubject(topic);
+
+        observer1.update();
+
+        // send message
+
+        topic.sendMessage("Hello How are you ");
+
     }
 }
 
