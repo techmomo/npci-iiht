@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62d52585-c53c-4b17-8bcc-522ae4bec2e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,16 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="272">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+              <folding>
+                <element signature="e#100#101#0" expanded="true" />
+                <element signature="e#136#137#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
@@ -79,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/MyTriangle.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Octagon.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Blue.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/designpattern/structural/Yellow.java" />
@@ -129,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Stack.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Queue.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java" />
       </list>
     </option>
@@ -170,6 +183,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mohsinkd786" type="462c0819:PsiDirectoryNode" />
               <item name="dsalgo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hello-world" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mohsinkd786" type="462c0819:PsiDirectoryNode" />
+              <item name="dsalgo" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -260,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631677623019</updated>
-      <workItem from="1631677624722" duration="35508000" />
+      <workItem from="1631677624722" duration="37487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35508000" />
+    <option name="totallyTimeSpent" value="37487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1792" height="1029" extended-state="0" />
@@ -338,17 +359,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/behavioral/Dispense500.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/designpattern/behavioral/DispenceChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -839,17 +849,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/dsalgo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>

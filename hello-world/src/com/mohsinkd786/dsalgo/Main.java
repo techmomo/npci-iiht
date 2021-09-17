@@ -39,6 +39,21 @@ public class Main {
         linkedList.printList();
 
 
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.root = new Node(1);
+        binaryTree.root.left = new Node(2);
+        binaryTree.root.right = new Node(3);
+        binaryTree.root.left.left = new Node(4);
+
+        // traversals
+        System.out.println("Pre Order Traversal");
+        binaryTree.preOrder(binaryTree.root);
+
+        System.out.println("In Order Traversal");
+        binaryTree.inOrder(binaryTree.root);
+
+        System.out.println("Post Order Traversal");
+        binaryTree.postOrder(binaryTree.root);
     }
 }
 
@@ -148,7 +163,8 @@ public class Main {
  *           give me a position for 5
  *           answer: 1,2 (all the occurrences)
  *
-*
+*   5. Assignment : Write a Program to sort the elements in a Linkedlist & push them into a Queue (ASC / Desc),
+*                   ensure optimal time complexity
 *
 *   Stack :
 *
@@ -178,6 +194,19 @@ public class Main {
 *   Doubly LinkedList
 *
 *   Circular LinkedList
+*
+*
+*  NO LINEAR DS:
+*
+*   Tree:
+*
+*   Node: [data, child nodes]
+*
+*   Edge : ref / link between the nodes
+*   Root: parent node / topmost node
+*
+*
+*
 *
 * */
 
