@@ -54,6 +54,25 @@ public class Main {
 
         System.out.println("Post Order Traversal");
         binaryTree.postOrder(binaryTree.root);
+
+
+        // Binary Search Tree
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+        binarySearchTree.insert(1);
+        binarySearchTree.insert(3);
+        binarySearchTree.insert(11);
+        binarySearchTree.insert(14);
+        binarySearchTree.insert(4);
+        binarySearchTree.insert(5);
+
+        System.out.println("Inorder Traversal");
+        binarySearchTree.inorder();
+
+        System.out.println("Deletion ");
+        binarySearchTree.delete(14);
+
+        System.out.println("Inorder Traversal");
+        binarySearchTree.inorder();
     }
 }
 
@@ -207,8 +226,44 @@ public class Main {
 *
 *
 *
+* BST :
 *
+* 1. All nodes of left subtree are less than the root node
+* 2. All nodes of right subtree are more than the root node
+* 3. Both subtrees follow the BST expectations.
+*
+*
+* Read : O(n)
+* Write: O(n)
+* Delete: O(n)
+*
+*
+*
+* Algorithms :
+*
+*   Sorting :
+*       1. Bubble Sort : [1,3,9,15,45] - O(n2)
+*
+*       2. Selection Sort
+*       3. Insertion Sort
+*       4. Merge Sort:  - O(n logn)
+*               Divide & Conquer
+*               [1,3,9,15,45]
+*               a. Divide: in between 9
+*                       [1,3] [9,15,45]
+*               b. Conquer :
+*                       Sort the sub arrays else go to step a.
+*               c. Combine: Merge the sorted sub arrays
+*
+*       5. Heap Sort
+*       6. Quick Sort : find the pivot element - compare all the elements with it, divide & conquer based on it - O(n2)
+*       7. Bucket Sort
+*   Searching:
+*       1. Linear Search
+*       2. Binary Search
 * */
+
+
 
 
 
