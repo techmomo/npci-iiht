@@ -75,4 +75,12 @@ public class Main {
 *
 *
 * Assignment : Write a Program that arranges the elements in an array in ascending order.
+*
+* Assignment : Write a Program to identify the position of an element in an array.
+*
+*           e.g. [1,4,5,9,10]
+*           give me a position for 9
+*           answer: 3
+*
+*
 * */
