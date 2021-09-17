@@ -106,12 +106,20 @@ public class Main {
 * 3. Assignment : Write a Program to demonstrate Circular Queue
 *
 * 4. Assignment : Write a Program to transform the elements from a Stack to the Queue
-*       e.g. Stack REAR[2,3,6,12,9,15] FRONT
 *
+*
+*   calculateQueueElemPositions(int[] stack){
+*       return newQueueArr;
+* }
+*
+* calculateQueueElemPositions([6,12,2,15,17,3,9]);
+*
+*       e.g. Stack REAR[6,12,2,15,17,3,9] FRONT
+* Identify the 2 smallest values & find their multiples
 * 2 -> 6,12
-* 3 -> 6,12,9,15
+* 3 -> 6,12,15,9
 *
-*       expected Queue REAR [ 6,12,6,12,9,15] FRONT
+*       expected Queue REAR [ 6,12,6,12,15,9] FRONT
 *
 *           e.g. [1,4,5,9,10]
 *           give me a position for 9
