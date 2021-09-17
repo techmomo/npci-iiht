@@ -27,6 +27,18 @@ public class Main {
 
         queue.printQueue();
 
+
+        // Linked List
+
+        LinkedList linkedList = new LinkedList();
+        linkedList.insertAtEnd(1);
+        linkedList.insertAtFront(3);
+        linkedList.insertAtFront(10);
+        linkedList.insert(linkedList.head.next,9);
+
+        linkedList.printList();
+
+
     }
 }
 
@@ -154,8 +166,18 @@ public class Main {
 *
 *
 *
+*   LinkedList:
 *
+*   combination of nodes : Node [ data , ref of next node]
 *
+*   Singly LinkedList:
+*       Read : O(N)
+*       Add/ Insertion : O(1)
+*       Deletion: O(1)
+*       Search: O(N)
+*   Doubly LinkedList
+*
+*   Circular LinkedList
 *
 * */
 
