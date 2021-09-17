@@ -3,6 +3,30 @@ package com.mohsinkd786.dsalgo;
 public class Main {
     public static void main(String[] args) {
 
+
+        // Our Custom Stack
+
+        Stack stack = new Stack(3);
+        stack.push(1);
+        stack.push(3);
+        stack.push(2);
+
+        stack.printStack();
+        // remove
+        stack.pop();
+
+        // Custom Queue
+
+        Queue queue = new Queue(3);
+        queue.enQueue(1);
+        queue.enQueue(3);
+        queue.enQueue(6);
+
+        // remove
+        queue.deQueue();
+
+        queue.printQueue();
+
     }
 }
 
@@ -79,6 +103,8 @@ public class Main {
 * Assignment : Write a Program to identify the position of an element in an array.
 *
 *
+* Assignment : Write a Program to demonstrate Circular Queue
+*
 *           e.g. [1,4,5,9,10]
 *           give me a position for 9
 *           answer: 3
@@ -95,4 +121,27 @@ public class Main {
  *           answer: 1,2 (all the occurrences)
  *
 *
+*
+*   Stack :
+*
+*   Push : Add a new element at the top - O(1)
+*   Pop : Remove an element from the top - O(1)
+*   Peek : Get the element from the top - O(1)
+*   Search :
+*
+*
+*
+*   Queue:
+*
+*   Enqueue: Add a new element at the rear (TAIL) - O(1)
+*   Dequeue: Remove an element at the front (HEAD) - O(1)
+*
+*
+*
+*
+*
+*
 * */
+
+
+
