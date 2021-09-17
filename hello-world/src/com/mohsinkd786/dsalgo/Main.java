@@ -105,6 +105,14 @@ public class Main {
 *
 * 3. Assignment : Write a Program to demonstrate Circular Queue
 *
+* 4. Assignment : Write a Program to transform the elements from a Stack to the Queue
+*       e.g. Stack REAR[2,3,6,12,9,15] FRONT
+*
+* 2 -> 6,12
+* 3 -> 6,12,9,15
+*
+*       expected Queue REAR [ 6,12,6,12,9,15] FRONT
+*
 *           e.g. [1,4,5,9,10]
 *           give me a position for 9
 *           answer: 3
