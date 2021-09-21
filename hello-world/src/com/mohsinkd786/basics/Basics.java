@@ -90,6 +90,10 @@ public class Basics {
 //              [Exceptional cases when number is divisible by 2 & 3 ,2 shall have higher precedence over 3]
 // NOTE : Incase of values less than 2 return the same value e.g. 8, = result = 1
 
+// Assignment : Write a Program to identify the correct integer / float type based on the input accepted from the user.
+//              e.g. if a user enters 1000 it should be prompted as short,int long but recommended as short
+//              e.g. if a user enters 35000 it should be prompted as int, long but recommended as int
+//              e.g. if a user is prompted with 9.10 it should be prompted with float, double but recommended as float
 
 // Eclipse
 // STS
