@@ -158,7 +158,12 @@ public class Basics {
 
 // Assignment : Write a Program to print a reverse fibonnaci series -
 
-
+// Assignment : Write a Program to identify the duplicates & the number of occurrences.
+//              e.g. [1,2,2,4,8,9,8,7,7,7,8] =
+//              Expected :
+//  Step 1 :            [1], [2,2], [4], [8,8,8], [9], [7,7,7]
+//  Step 2 :            [9],[8,8,8],[7,7,7],[4,4,4,4]....  [sorted order]
+//  Step 3 :            [4,4,4,4],[8,8,8],[7,7,7],[9].... [sort based on no. of occurrences & then natural sort]
 
 
 
