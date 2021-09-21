@@ -74,6 +74,67 @@ public class Basics {
 
         int firstValue = scanner.nextInt();
         System.out.println(firstValue);
+
+
+        //
+//        int totalAssetUser1 = 0;
+//        int totalAssetUser2 = 0;
+//
+//        System.out.println("Stock 1 Price");
+//        float stockPrice1 = scanner.nextFloat();
+//
+//        //
+//        System.out.println("Stock 2 Price");
+//        float stockPrice2 = scanner.nextFloat();
+//
+//
+//        System.out.println("User 1 ");
+//        System.out.println("Buy Stock 1");
+//
+//        stockPrice1 = scanner.nextFloat(); //
+
+        //
+        int i = 10;
+                   //0, 1, 2 index position
+        // initialise & declare array
+        int arr[] = {1,12,19};
+
+        // size of an array
+        int length = arr.length;
+
+        System.out.println(arr[0]);
+
+        // approach 2: declare array
+        // define the size for the array
+        int arr1[]= new int[3];
+
+        // 0 - 2
+        arr1[2] = 12;
+
+        // not possible
+        // run time / execution error
+        //arr1[3] = 13;
+
+        arr1[0] = 1;
+        arr1[1] = 2;
+        arr1[2] = 3;
+
+        // traversals
+        // loops
+
+        // for loop
+
+        // expects 3 things
+        // 1. initial boundary
+        // 2. limit
+        // 3. increment / decrement
+
+        int j;
+        for(j=0;j<arr1.length;j++){
+            System.out.println(arr1[j]);
+        }
+
+        // iterators
     }
 }
 
@@ -94,6 +155,12 @@ public class Basics {
 //              e.g. if a user enters 1000 it should be prompted as short,int long but recommended as short
 //              e.g. if a user enters 35000 it should be prompted as int, long but recommended as int
 //              e.g. if a user is prompted with 9.10 it should be prompted with float, double but recommended as float
+
+// Assignment : Write a Program to print a reverse fibonnaci series -
+
+
+
+
 
 // Eclipse
 // STS
