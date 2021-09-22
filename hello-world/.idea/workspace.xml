@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62d52585-c53c-4b17-8bcc-522ae4bec2e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../dev.index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../dev.index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Oops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Oops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/basics/PlaneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/basics/PlaneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mohsinkd786/basics/Vehicle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/basics/Oops.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -316,12 +311,12 @@
       <option name="presentableId" value="Default" />
       <updated>1631677623019</updated>
       <workItem from="1631677624722" duration="42763000" />
-      <workItem from="1632196805305" duration="33884000" />
+      <workItem from="1632196805305" duration="34841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76647000" />
+    <option name="totallyTimeSpent" value="77604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1792" height="1029" extended-state="0" />
@@ -341,7 +336,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3501094" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3501094" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -834,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mohsinkd786/basics/Oops.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
         </state>
       </provider>
     </entry>
