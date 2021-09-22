@@ -78,3 +78,36 @@ public class Arrays {
 // Expected Matrix : [5,5,2]
 //                   [10,3,6]
 
+
+// Assignment 4: Equality of 2 matrices
+
+
+//  Matrix 1 : [1,2,2]
+//             [3,-2,5]
+
+// Matrix 2: [1,2,2]
+//           [3,-2,5]
+
+// In case of equality
+// Expected Result : Identical Matrices
+
+
+//  Matrix 1 : [1,12,5]
+//             [3,-2,6]
+
+// Matrix 2: [1,2,2]
+//           [3,-2,5]
+
+// Expected Result :   [12,5]
+//                     [0,6]
+
+//      OR
+//                     [0,12,5]
+//                     [0,0,6]
+
+//                     [0,2,2]
+//                     [0,0,5]
+
+//      OR
+//                     [0,12,5] [0,2,2]
+//                     [0,0,6]  [0,0,5]
