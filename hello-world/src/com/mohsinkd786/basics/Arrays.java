@@ -56,6 +56,25 @@ public class Arrays {
 }
 
 
-// Assignment : Write a Program to construct a matrix based upon the size of 2 dimentional array
+// Assignment 1 : Write a Program to construct a matrix based upon the size of 2 dimentional array
 //             1  2  3
 //             6  5  4
+
+// Assignment 2 : Write a Program to construct a tower as below
+//                  1
+//                 2 2
+//                5 5  5
+//              20 20 20 20
+
+
+// Assignment 3: Sum of two matrices
+
+//  Matrix 1 : [1,2,2]
+//             [3,-2,5]
+
+// Matrix 2: [4,3,0]
+//           [7,5,1]
+
+// Expected Matrix : [5,5,2]
+//                   [10,3,6]
+
