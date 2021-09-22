@@ -32,7 +32,7 @@ public class Basics {
 
         y = num1;
 
-       // short z = x + num1;
+        // short z = x + num1;
         int a = 200;
 
         // implicit type casting
@@ -42,7 +42,7 @@ public class Basics {
 
         // explicit type casting
         // from large to small storage
-        num1 = (byte)a;
+        num1 = (byte) a;
 
         System.out.println(num1);
 
@@ -59,13 +59,13 @@ public class Basics {
         // if else
         num1 = 101;
         y = 14;
-        a= -1;
+        a = -1;
 
-        if(num1 > 100 && (a > 0 || y < 15)){
+        if (num1 > 100 && (a > 0 || y < 15)) {
             System.out.println("NUm1 is greater than 100 ");
-        } else if(num1 == 100){
+        } else if (num1 == 100) {
             System.out.println("NUm1 is equal to 100");
-        } else{
+        } else {
             System.out.println("NUm1 us lesser than 100");
         }
 
@@ -95,9 +95,9 @@ public class Basics {
 
         //
         int i = 10;
-                   //0, 1, 2 index position
+        //0, 1, 2 index position
         // initialise & declare array
-        int arr[] = {1,12,19};
+        int arr[] = {1, 12, 19};
 
         // size of an array
         int length = arr.length;
@@ -106,10 +106,14 @@ public class Basics {
 
         // approach 2: declare array
         // define the size for the array
-        int arr1[]= new int[3];
+        int arr1[] = new int[3];
 
         // 0 - 2
         arr1[2] = 12;
+
+
+        int arr2[] = new int[3];
+
 
         // not possible
         // run time / execution error
@@ -130,14 +134,11 @@ public class Basics {
         // 3. increment / decrement
 
         int j;
-        for(j=0;j<arr1.length;j++){
+        for (j = 0; j < arr1.length; j++) {
             System.out.println(arr1[j]);
         }
-
-        // iterators
     }
 }
-
 // Assignment : Write a Program to identify if a value is even & is square or multiple of previous value.
 //              e.g. first value = 2, then I gave 4 then it should say 4 is a square & multiple of 2
 //              e.g. first value = 2, then I gave 6 then it should say 6 is a multiple of 2 = 3s of 2
@@ -158,11 +159,14 @@ public class Basics {
 
 // Assignment : Write a Program to print a reverse fibonnaci series -
 
+
 // Assignment : Write a Program to identify the duplicates & the number of occurrences.
 //              e.g. [1,2,2,4,8,9,8,7,7,7,8] =
 //              Expected :
 //  Step 1 :            [1], [2,2], [4], [8,8,8], [9], [7,7,7]
-//  Step 2 :            [9],[8,8,8],[7,7,7],[4,4,4,4]....  [sorted order]
+//  Step 2 :            [9,8,8,8,7,7,7,4,4,4,4]....  [sorted order]
+
+
 //  Step 3 :            [4,4,4,4],[8,8,8],[7,7,7],[9].... [sort based on no. of occurrences & then natural sort]
 
 
