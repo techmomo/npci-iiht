@@ -5,4 +5,11 @@ public class FourWheeler implements Automobile {
     public void engine() {
 
     }
+
+    @Override
+    public void process() {
+        // call static methods in interface
+        Automobile.messageMe();
+        //Automobile.id
+    }
 }

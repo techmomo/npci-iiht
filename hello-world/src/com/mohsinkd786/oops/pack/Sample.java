@@ -33,3 +33,7 @@ public class Sample {
 * */
 
 
+/*
+* Assignment : Write a program to calculate the inventory of a set of products , for a seller
+*
+* */
