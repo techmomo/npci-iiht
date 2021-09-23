@@ -85,7 +85,7 @@ class Oops {
 // Assignment : Identify the features of a vehicle via multi level inheritance , e.g. if I give Maruti I should get the specs for it,& say its a car ,
 //              if I give harley it should give me the specs for it & inform that harley is a bike
 
-// Assignment : Write a Program to calculate the cost of spares used to make cars (e.g. 1 bentley , 2 polo, 1 trailer )
+// Assignment 3 : Write a Program to calculate the cost of spares used to make cars (e.g. 1 bentley , 2 polo, 1 trailer )
 //              e.g. wheels = 5 + 5 + 12 & glasses, doors
 
 
