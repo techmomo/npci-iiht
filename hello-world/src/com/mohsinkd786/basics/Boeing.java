@@ -1,5 +1,7 @@
 package com.mohsinkd786.basics;
 
+import com.mohsinkd786.designpattern.behavioral.Book;
+
 public class Boeing extends Plane {
 
     Boeing(int id){
@@ -14,9 +16,18 @@ public class Boeing extends Plane {
     int calculateWidth(int x, int y) {
         return x + y;
     }
+
+    // over riding
+    @Override
+    void sayHello() {
+        Book book = new Book(100,"");
+
+       System.out.println("sayHello Boeing");
+    }
 }
 
 
+// packages - folder structure to arrange our code base
 
 //class A {
 //    void add(){

@@ -11,6 +11,8 @@ public abstract class Plane {
     // non abstract method
     void sayHello(){
         //
+
+        System.out.println("sayHello() Plane ");
     }
 
     abstract int calculateWidth(int x,int y);

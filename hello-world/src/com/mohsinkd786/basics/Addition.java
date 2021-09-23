@@ -7,7 +7,7 @@ public class Addition implements Operation,OperationType,Operation1 {
 
     @Override
     public void execute(int i, int j) {
-        System.out.println("Sample");
+        System.out.println("com.mohsinkd786.oops.pack.Sample");
     }
 
     @Override

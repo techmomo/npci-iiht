@@ -1,5 +1,7 @@
 package com.mohsinkd786.basics;
 
+import java.util.Collections;
+
 public class Computer {
 
     // required
@@ -46,6 +48,11 @@ public class Computer {
     void computerInfo(){
         System.out.println("Monitor Price: "+monitor.price);
         System.out.println("Keyboard Specs: "+keyboard.price +" Dimensions: "+keyboard.width +" x "+keyboard.length);
+    }
+
+    // method over loaded
+    int computerInfo(int i){
+        return i;
     }
 }
 

@@ -20,7 +20,7 @@ class Oops {
         // reference variable
         Sample obj;
 
-        //obj = new Sample();
+        //obj = new com.mohsinkd786.oops.pack.Sample();
 
         // create the object for sample
         // default no argument constructor
@@ -66,6 +66,9 @@ class Oops {
         Plane plane = new Boeing(1);
         Plane plane1 = new Bombardier(7);
 
+        plane.sayHello();
+
+        plane1.sayHello();
 
         PlaneService planeService = new PlaneService();
 
@@ -87,6 +90,12 @@ class Oops {
 
 // Assignment 3 : Write a Program to calculate the cost of spares used to make cars (e.g. 1 bentley , 2 polo, 1 trailer )
 //              e.g. wheels = 5 + 5 + 12 & glasses, doors
+
+
+// Assignment 4: Write a Program to calculate the project cost for employees based on employee salary & additional expenditures
+                // employees can't be hired more than the overall project cost
+//              e.g. project cost is 100 INR - and it already has 2 employees with salary of 50 & 30 = 80 INR,
+//                  so a new hire can't have salary more than 100-80 = 20 INR
 
 
 /*
