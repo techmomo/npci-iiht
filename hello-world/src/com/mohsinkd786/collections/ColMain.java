@@ -2,6 +2,7 @@ package com.mohsinkd786.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ColMain {
@@ -50,7 +51,7 @@ public class ColMain {
         // comparable - natural sort
         // comparator - custom / un natural sort
 
-        Collections.sort(arrayList);
+        Collections.sort(arrayList, Comparator.reverseOrder());
 
         // access an element in array list
 
@@ -68,13 +69,13 @@ public class ColMain {
 
 
         // User
-        User user = new User(1);
+        User user = new User(1,"");
 
         System.out.println(user);
 
-        User user1 = new User(1);
+        User user1 = new User(1,"Test1");
 
-        User user2 = new User(2);
+        User user2 = new User(2,"Test2");
 
         if(user2.equals(user1)){
             System.out.println("Objects are Identical");
@@ -83,11 +84,20 @@ public class ColMain {
         System.out.println("Users.....");
         List<User> users = new ArrayList<>();
 
-        users.add(new User(1));
-        users.add(new User(11));
-        users.add(new User(12));
-        users.add(new User(5));
+        users.add(new User(1,"Bob"));
+        users.add(new User(11,"Adam"));
+        users.add(new User(12,"Steve"));
+        users.add(new User(5,"James"));
 
+        // apply comparator based on Id
+        Collections.sort(users,new SortById());
+
+        for(User usr: users){
+            System.out.println(usr);
+        }
+        System.out.println("Sort By Name");
+        // sort by name
+        Collections.sort(users,new SortByName());
         for(User usr: users){
             System.out.println(usr);
         }
@@ -105,9 +115,11 @@ class User{
     *
     * */
     int userId;
+    String name;
 
-    User(int id){
+    User(int id,String uName){
         userId = id;
+        name = uName;
     }
 
     @Override
@@ -119,12 +131,12 @@ class User{
             return false;
         }
         User user = (User) o; // type cast the object into our class type
-        return userId == user.userId;
+        return userId == user.userId && name.equals(user.name);
     }
 
     @Override
     public String toString() {
-        return "User => Id =" + userId;
+        return "User => Id =" + userId +", Name = "+name;
     }
 }
 
@@ -175,4 +187,5 @@ class User{
 /*
 * Assignment : Build a Shopping Cart for a customer , ensure to allow adding items to the cart only when they are in stock
 *
+* Assignment : Sort elements based on Id , in case id is sample then sort based on name for the user
 * */
