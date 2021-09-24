@@ -235,6 +235,18 @@ public class ColMain {
             System.out.println(customer.name);
         }
 
+        // traverse via the map
+        Set<Map.Entry<Customer,String>> entrySet =  customerMap.entrySet();
+
+        for(Map.Entry<Customer,String> entry: entrySet){
+            System.out.print("KEY : "+entry.getKey());
+            System.out.print(" ");
+            System.out.print("VALUE : "+entry.getValue());
+            System.out.print("\n");
+        }
+
+        // Hashtable
+        // Properties
     }
 
     // Hashmap
@@ -274,6 +286,15 @@ class Customer{
     @Override
     public int hashCode() {
         return Objects.hash(id, name);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
 
