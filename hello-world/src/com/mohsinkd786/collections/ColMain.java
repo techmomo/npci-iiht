@@ -1,9 +1,6 @@
 package com.mohsinkd786.collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ColMain {
     public static void main(String[] args) {
@@ -75,7 +72,10 @@ public class ColMain {
 
         User user1 = new User(1,"Test1");
 
-        User user2 = new User(2,"Test2");
+        User user2 = new User(1,"Test1");
+
+        System.out.println("U1 "+user1.hashCode());
+        System.out.println("U2 "+user2.hashCode());
 
         if(user2.equals(user1)){
             System.out.println("Objects are Identical");
@@ -84,28 +84,202 @@ public class ColMain {
         System.out.println("Users.....");
         List<User> users = new ArrayList<>();
 
+        //users.add();
+
         users.add(new User(1,"Bob"));
+
+        users.add(new User(11,"Jackson"));
         users.add(new User(11,"Adam"));
         users.add(new User(12,"Steve"));
         users.add(new User(5,"James"));
 
+
         // apply comparator based on Id
-        Collections.sort(users,new SortById());
+        //Collections.sort(users,new SortById());
+        // leverage comparable
+        Collections.sort(users);
 
         for(User usr: users){
             System.out.println(usr);
         }
         System.out.println("Sort By Name");
         // sort by name
-        Collections.sort(users,new SortByName());
-        for(User usr: users){
-            System.out.println(usr);
+        //Collections.sort(users,new SortByName());
+//        for(User usr: users){
+//            System.out.println(usr);
+//        }
+
+
+
+        // LinkedList
+
+        LinkedList<Integer> nums = new LinkedList<Integer>();
+        nums.add(4);
+        nums.add(12);
+        nums.add(8);
+
+        // traverse
+        for(int i: nums){
+            System.out.println(i);
         }
+
+//        public E getFirst() {
+////            final Node<E> f = first;
+////            if (f == null)
+////                throw new NoSuchElementException();
+////            return f.item;
+////        }
+
+
+        // get the first element
+        nums.getFirst();
+
+        // get the last element
+        nums.getLast();
+
+        // get the first element
+        nums.peek();
+
+        // get & remove the first element
+        nums.poll();
+
+        // delete the last element e.g. in case of stack
+        nums.pop();
+
+        Object arr[] =  nums.toArray();
+
+
+        // Set
+
+        HashSet<String> messageSet = new HashSet();
+
+        messageSet.add("Hello");
+        messageSet.add("Welcome");
+        messageSet.add("Test");
+        messageSet.add("Test");
+
+        for(String msg : messageSet){
+            System.out.println("Msg "+msg);
+        }
+
+        //create list from set
+        List<String> cleanMsgs = new ArrayList<>(messageSet);
+
+
+        Set<User> userSet = new HashSet<>();
+        userSet.add(user1);
+        userSet.add(user2);
+
+        for (User u:
+             userSet) {
+            System.out.println("User Set "+u.name);
+        }
+
+        // LinkedList //
+//        class LinkedList{
+//            Node node;
+//
+//            static class Node{
+//                String value;
+//                Node nextRef;
+//            }
+//        }
+        // [1,nextRef]-> [2,null]
+
+
+        //
+        Service<User,Integer> service = new Service();
+
+        service.add(user1);
+        service.delete(user1);
+
+        List<User> usrs =  service.getAll();
+
+        //
+
+        Service<Integer,Integer> service1 = new Service<>();
+        service1.add(1);
+        service1.add(54);
+
+        service1.delete(1);
+
+        List<Integer> integers = service1.getAll();
+
+        service.print("Hello");
+        service1.print(12);
+
+        HashMap<Integer,String> _map = new HashMap();
+
+        _map.put(1,"One");
+        _map.put(2,"Two");
+        _map.put(3,"Three");
+        _map.put(5,"One");
+
+        HashMap<Customer,String> customerMap = new HashMap<>();
+
+        Customer customer1 = new Customer(1,"Cust-1");
+        System.out.println("customer 1 : hashcode "+customer1.hashCode());
+
+        customerMap.put(customer1,"One");
+        customerMap.put(new Customer(2,"Cust-2"),"Two");
+        customerMap.put(new Customer(1,"Cust-1"),"Five");
+
+        Customer customer2 = new Customer(1,"Cust-1","mm@gg.co.uk");
+        System.out.println("customer 2 : hashcode "+customer2.hashCode());
+
+        String val = customerMap.get(customer2);
+        System.out.println("VAL ::"+val);
+
+        //
+        for (Customer customer: customerMap.keySet()) {
+            System.out.println(customer.name);
+        }
+
+    }
+
+    // Hashmap
+    // Tree map
+    // LinkedHashMap
+    // ConcurrentHashMap
+
+
+}
+
+
+class Customer{
+    int id;
+    String name;
+    String email;
+
+    public Customer(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Customer(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return id == customer.id &&
+                name.equals(customer.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
     }
 }
 
 
-class User{
+
+class User implements Comparable<User>{
 
     /*
     * Object class methods, that should be overriden:
@@ -123,7 +297,14 @@ class User{
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hash(userId, name);
+    }
+
+    @Override
     public boolean equals(Object o) {
+
+        super.hashCode();
         if (this == o){
             return true;
         }
@@ -137,6 +318,18 @@ class User{
     @Override
     public String toString() {
         return "User => Id =" + userId +", Name = "+name;
+    }
+
+    @Override
+    public int compareTo(User u) {
+        if(userId > u.userId){
+            return 1;
+        }else if(userId < u.userId){
+            return -1;
+        }else{
+            //return 0;
+            return name.compareTo(u.name);
+        }
     }
 }
 
@@ -185,7 +378,10 @@ class User{
 
 
 /*
-* Assignment : Build a Shopping Cart for a customer , ensure to allow adding items to the cart only when they are in stock
+* Assignment 1: Build a Shopping Cart for a customer , ensure to allow adding items to the cart only when they are in stock
 *
-* Assignment : Sort elements based on Id , in case id is sample then sort based on name for the user
+* Assignment 2: Sort elements based on Id , in case id is sample then sort based on name for the user
+*
+* Assignment 3: Create your custom implementation for linkedlist -
+*                  create singly linked list , with add , get , remove & to Array() methods
 * */
