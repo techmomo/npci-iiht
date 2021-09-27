@@ -131,3 +131,92 @@ if(x < 9):
 #                                       b. First Division - 60 - 79 % 
 #                                       c. Second Division - 50 - 59 %
 
+
+
+# for loop & while loop
+
+nums = [10,11,17,-1,2]
+for i in nums:
+    print(i)
+
+# sum 
+
+sum = 0
+for i in nums:
+    sum = sum + i
+
+print("Sum is ",sum)
+
+
+# range function
+
+# range(start,end, increment)
+nums = range(2,9,2)
+
+print("Traverse via the range values")
+for i in nums:
+    print(i)
+
+
+# traverse via the list values using range function to get the index as well
+
+for index in range(len(nums)):
+    print("Element in num ",nums[index])
+
+# create an empty list
+lst = []
+# lst[0] = False
+# lst[0] = True
+# lst[0] = False
+
+lst.append(False)
+lst.append(True)
+lst.append(False)
+lst.append(False)
+
+# traverse via the values
+for l in lst:
+    print("Boolean ",l)
+
+lst1 = list()
+
+# lst1[0] = "Hello"
+# lst1[1] = "Hi"
+# lst1[2] = "Hey"
+
+lst1.append("Hello")
+lst1.append("Hey")
+lst1.append("Hola")
+
+for ls in lst1:
+    print("String ",ls)
+
+
+# slicing
+
+lst1[0:1]
+
+# add a record at a particular position
+lst.insert(0,"Welcome")
+
+# get the position of an element
+position = lst.index(False)
+print("POSITION ",position)
+
+print("Mix Blendid lst ........")
+print(lst)
+# extends : add a list to end of another list
+
+
+n_lst = ["Error","Exception"]
+lst1.extend(n_lst)
+
+print(lst1)
+
+# while loop
+
+count = 0
+
+while(count < 5):
+    print("Count ",count)
+    count = count + 1
