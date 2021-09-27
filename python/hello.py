@@ -235,7 +235,7 @@ for i in range(0,10):
         pass
         print("I is ",i)
 
-# Assignment 2: Give me a tower of hanoi 
+# Assignment 2: Give me a tower of hanoi - 5 levels
 
 # Expected OUTPUT PART 1:
 #                   1
@@ -247,4 +247,40 @@ for i in range(0,10):
 
 # Row 1 : 1s = 1
 # Row 2 : 3s = 3 * 2 = 6
-# Row 5 : 5s = 5 * 3 = 15
+# Row 3 : 5s = 5 * 3 = 15
+
+
+# Assignment 3: 
+# Expected OUTPUT PART 1: (the step increment is being )
+#                   1
+#               4       5
+#           7       8      9 
+#       
+
+# Expected OUTPUT PART 2:
+
+# Row 1 : = 1
+# Row 2 : = 3 + 4 = 7
+# Row 3 : = 5 + 6 + 7 = 18
+
+# (Last row will have the 
+# sum of all the rows )Row 4 : = Row 1 + Row 2 + Row 3 = 1 + 7 + 18 = 26
+
+# Expected OUTPUT PART 3:
+
+# Create a matrix from the Inversed Tower of Hanoi
+# e.g. for above tower
+#  [5,6,7]
+#  [3,4,0]
+#  [1,0,0]
+
+#  [5,6,7]
+#  [3,4,0]
+#  [1,0,0]
+# Expected OUTPUT PART 4:
+
+# Calculate the sqaure of the generated matrix
+# 
+#  [25,36,49]
+#  [9,16,0]
+#  [1,0,0]
