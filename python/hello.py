@@ -237,11 +237,14 @@ for i in range(0,10):
 
 # Assignment 2: Give me a tower of hanoi 
 
+# Expected OUTPUT PART 1:
 #                   1
 #               3       3
 #           5       5      5 
 #       
 
-# Line 1 : 1s = 1
-# Line 2 : 3s = 3 * 2 = 6
-# Line 5 : 5s = 5 * 3 = 15
+# Expected OUTPUT PART 2:
+
+# Row 1 : 1s = 1
+# Row 2 : 3s = 3 * 2 = 6
+# Row 5 : 5s = 5 * 3 = 15
