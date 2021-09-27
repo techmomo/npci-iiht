@@ -105,5 +105,29 @@ else:
 if(x < 9):
     if x > 4:
         print("test")
-        print("Hello")
+    print("Hello")
+
+
+# def helo():
+#     print("")
+#     if x < 11:
+#         if x > 5 and x < 9:
+#             print("Yes is quite small")
+#     print("Oops")
+
+# Assignment 1 : Gimme the list of all the students that have passed in a class with proper grading system.
+#               e.g. if a student has 3 subjects : Math / Physics / Chemistry
+#                    if he scores less than 50 % in two of those subjects he fails over all
+#                    however if he fails in only 1 subject then he fails in just 1 subject, that should be considered 
+#                    as re appear
+# 
+#               Expectations : 
+#                           1. Get a list of students failing in more than 2 or more subjects i.e. overall performance of class
+#                           2. Get a list of students failing in 1 subject only - i.e. re appearing student
+#                           3. Calculate the overall class performance based on students passed - point #1
+#                           4. Calculate the overall performance based on grading system, to showcase the %age of
+#                              students falling under 
+#                                       a. Distinction - 80 % 
+#                                       b. First Division - 60 - 79 % 
+#                                       c. Second Division - 50 - 59 %
 
