@@ -220,3 +220,28 @@ count = 0
 while(count < 5):
     print("Count ",count)
     count = count + 1
+
+for i in range(5):
+    if i % 2 == 0:
+        print(i)
+        if(i == 4):
+            break       
+        # break - will exit from the loop
+        # continue - skip the execution at that point & continue the iteration
+        # pass - skip / ignore the statements after this point
+        # 
+for i in range(0,10):
+    if i % 3 == 0:
+        pass
+        print("I is ",i)
+
+# Assignment 2: Give me a tower of hanoi 
+
+#                   1
+#               3       3
+#           5       5      5 
+#       
+
+# Line 1 : 1s = 1
+# Line 2 : 3s = 3 * 2 = 6
+# Line 5 : 5s = 5 * 3 = 15
