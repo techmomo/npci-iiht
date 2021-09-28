@@ -260,27 +260,96 @@ for i in range(0,10):
 # Expected OUTPUT PART 2:
 
 # Row 1 : = 1
-# Row 2 : = 3 + 4 = 7
-# Row 3 : = 5 + 6 + 7 = 18
+# Row 2 : = 4 + 5 = 9
+# Row 3 : = 7 + 8 + 9 = 24
 
 # (Last row will have the 
-# sum of all the rows )Row 4 : = Row 1 + Row 2 + Row 3 = 1 + 7 + 18 = 26
+# sum of all the rows )Row 4 : = Row 1 + Row 2 + Row 3 = 1 + 9 + 24 = ?
 
 # Expected OUTPUT PART 3:
 
 # Create a matrix from the Inversed Tower of Hanoi
 # e.g. for above tower
-#  [5,6,7]
-#  [3,4,0]
+#  [7,8,9]
+#  [4,5,0]
 #  [1,0,0]
 
-#  [5,6,7]
-#  [3,4,0]
+#  [7,8,9]
+#  [4,5,0]
 #  [1,0,0]
 # Expected OUTPUT PART 4:
 
 # Calculate the sqaure of the generated matrix
 # 
-#  [25,36,49]
-#  [9,16,0]
+#  [49,64,81]
+#  [16,25,0]
 #  [1,0,0]
+
+
+
+# tuple
+
+nums_tuple = (10,12,9,4)
+
+print(nums_tuple)
+
+xx,yy,zz,aa = nums_tuple
+
+print(xx)
+print(yy)
+print(zz)
+
+for n in nums_tuple:
+    print(n)
+
+
+# check for an element , if it exists
+print(10 in nums_tuple)
+
+nums_tuple_ls = list(nums_tuple)
+nums_tuple_ls.append(15)
+nums_tuple = tuple(nums_tuple_ls)
+
+print(nums_tuple)
+
+
+# cleaning the tuple
+
+#del nums_tuple
+
+print(min(nums_tuple))
+
+
+multi_tuple = ("hi",1,2)
+
+# not permitted in case of heterogeneous values
+#print(min(multi_tuple))
+
+m_tuple = (10,20,[25,75,85])
+
+print(m_tuple)
+
+# modify the list within the tuple
+m_tuple[2][1] = -22
+
+print(m_tuple)
+
+#           Find the occurences at each level for all the root elements, incase they dont exist , we can skip their execution    
+# Assignment 1: (1,2,5, - Root
+#                   (5,8,9, - Level 1
+#                       (8,7,1, - Level 2
+#                           (5,1) - Level 3
+#                               ))) 
+# Expected :
+#               1
+#                 -
+#                   1
+#                     1
+#               5
+#                 5
+#                   -
+#                     5
+
+
+is_tuple = isinstance(m_tuple,list)
+print("Is Tuple ",is_tuple)
