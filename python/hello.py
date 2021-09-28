@@ -1,3 +1,6 @@
+from os import name
+
+
 print("Hello")
 
 # single line comments are written like this
@@ -405,6 +408,7 @@ print(raw_string)
 # list =  [] - maintains order / allows duplication / allows modifications
 # tuple = () - maintains order / allows duplication / doesnt allow modifications
 # set = {} - no order / doesnt allow duplication (supports uniqueness) / doesnt allow modifications
+# dict = {:} - no order / uniqueness for keys / key is immutable (string / number or tuple)
 
 user_ids = {1,9,22,18,17,9}
 
@@ -459,3 +463,188 @@ print(multi_color_set)
 # Assignment 3: Write a Program to find the numbers absent from a sequence of numbers e.g. [0,1,2,5] , 
 #               step should be dynamic,missing number should be located based on the step
 # Expected Output : 3,4 are missing
+
+
+# lst = [1,3,5,9]
+# step = 2
+
+# empty dictionary
+user_dict = {}
+
+# integer keys
+user_dict = {1:'One',2:'Two',3: 'Three'}
+print(user_dict)
+
+# complex / hetergeneous keys
+user_dict = { 'One': 1, 2: 'Two', (1,2): (1,2,3)}
+print(user_dict)
+
+for u in user_dict.items():
+    print('KEY :',u[0], ', VALUE :',u[1])
+
+print('For Loop ends..')
+# associative array
+#print(user_dict['Five'])
+
+# get method
+print(user_dict.get('Five'))
+
+user_dict['One'] = 'OneOne'
+
+# add a new key / value pair
+user_dict['Seven'] = 7
+
+# use same key to add a new value 
+user_dict['Seven'] = 9
+
+print(user_dict)
+
+# removals
+
+result = user_dict.pop('One')
+
+print('RESULT POP: ',result)
+print(user_dict)
+
+# removes the last record
+result = user_dict.popitem()
+
+print('RESULT Pop Item: ',result)
+print(user_dict)
+
+# remove all items in the dict
+user_dict.clear()
+
+print(user_dict)
+
+# create dict from keys with a default value
+marks_dict = {}.fromkeys(['Phy','Chem','Maths'],1)
+print(marks_dict)
+
+# dict comprehension
+
+squares = { x: x for x in range(6)}
+
+print(squares)
+
+
+# conditional comprehension
+odd_squares = {y : y * y for y in range(11) if y % 2 == 1}
+print(odd_squares)
+
+nums_dict = {5:'Five',8:'Eight',2:'Two',3: 'Three'}
+# sort the dictionary
+
+nums_dict = sorted(nums_dict)
+print(nums_dict)
+
+# check type 
+if isinstance(odd_squares,dict):
+    print('this is a dictionary')
+
+# update 
+odd_squares.update({ 10: 10})
+
+print(odd_squares)
+
+
+dict1 = {'One': 1,'Two': 2}
+dict2 = {'Five':5, 'Six':6}
+
+# concat 2 dictionaries
+# dict1.update(dict2)
+# print(dict1)
+
+# concat using **kwargs
+new_dict = {**dict2,**dict1}
+print(new_dict)
+
+# nested dictionaries
+
+address = { 'city': 'bengaluru','state': 'Karnataka','zip': '560045'}
+person = {'name': 'Mohsin','email': 'gg@gg.com','phone': '123456789','address': address}
+
+print(person)
+
+# view nested key values
+print('City :',person['address']['city'])
+
+# not allowed in case of nested dictionary / multi varied data items
+# sort values
+# sorted_person = sorted(person.values())
+# print(sorted_person)
+
+# Assignment : 
+
+
+# function
+
+# *args
+# **kwargs
+#callMe(**kwargs):
+
+# callMe(name='Tech',id= 1)
+
+
+# functions in python
+def say_hello():
+    print('Func: Hello')
+    _xx = 11
+    return 'Say hello'
+
+# call the function
+#print(_xx)
+resp = say_hello()
+print(resp)
+
+# function with default value for the parameter
+def calculate(i,j=0):
+    return i + j
+
+print(calculate(11))
+
+print(calculate(11,9))
+
+
+
+# *args - Arbitrary Arguments
+
+def process(*msgs):
+    for msg in msgs:
+        print('Process :: ',msg)
+
+process('Hello')
+process('Welcome','to','Python')
+
+
+# **kwargs - Keyword Arguments
+
+def process_me(**items):
+    for item in items.items():
+        print('KEY :',item[0], 'VALUE :',item[1])
+
+process_me(name='Hello')
+process_me(name='John',email='joe@gmail.com',id= 101)
+
+
+# global variable
+index_val = -1
+
+def execute(num1,num2):
+    add = num1 + num2 - index_val
+    diff = num1 - num2
+    mul = num1 * num2
+    div = num1 / num2
+    global xyz
+    xyz = 12
+    # return multiple values
+    return add, diff,mul,div
+
+
+sum,diff,prod,div = execute(12,4)
+
+print(sum)
+print(diff)
+print(prod)
+print(div)
+print(xyz)
