@@ -336,14 +336,14 @@ print(m_tuple)
 
 #           Find the occurences at each level for all the root elements, incase they dont exist , we can skip their execution    
 # Assignment 1: (1,2,5, - Root
-#                   (5,8,9, - Level 1
-#                       (8,7,1, - Level 2
+#                   (5,8,9,- Level 1
+#                       (1,5), (8,7,1, - Level 2
 #                           (5,1) - Level 3
 #                               ))) 
 # Expected :
 #               1
 #                 -
-#                   1
+#                   1 1
 #                     1
 #               5
 #                 5
@@ -353,3 +353,109 @@ print(m_tuple)
 
 is_tuple = isinstance(m_tuple,list)
 print("Is Tuple ",is_tuple)
+
+
+# Strings 
+
+
+msg = 'Hello how are you'
+msg1 = "Hi , 'Mr James' we welcome you"
+
+msg2 = '''He asked, "did you talk to Andrews?"
+I said yes he was good '''
+
+
+print(msg)
+print(msg1)
+print(msg2)
+
+print(msg[5:-2])
+
+#msg[1]='a'
+
+#print(msg)
+
+
+# traverse via the string
+
+count = 0
+
+for _char in msg:
+    print(_char)
+    if(_char == 'h' or _char == 'H'):
+        count = count + 1
+print('H was found ',count)
+
+
+# format method
+# curly braces are used for replacements
+raw_string = "{} {} , {}".format('Welcome','to','Disney Land')
+print(raw_string)
+
+# positioned placeholders
+
+raw_string = "{1} {2} , {0}".format('Welcome','to','Disney Land')
+print(raw_string)
+
+# keyword placeholders
+raw_string = "{a}, {c}, {b}".format(a='Hello',b='Welcome',c='Wonderland')
+print(raw_string)
+
+
+# list =  [] - maintains order / allows duplication / allows modifications
+# tuple = () - maintains order / allows duplication / doesnt allow modifications
+# set = {} - no order / doesnt allow duplication (supports uniqueness) / doesnt allow modifications
+
+user_ids = {1,9,22,18,17,9}
+
+print(user_ids)
+
+# enable modifications in a set
+
+user_ids.add(2)
+print(user_ids)
+
+# user_ids = {9,8,[5,6]}
+# print(user_ids)
+
+
+color_set = {'red','blue','green'}
+add_color_set = {'pink','purple','blue'}
+
+# union of two sets
+
+# pipe operator
+multi_color_set = color_set | add_color_set
+
+print(multi_color_set)
+
+# union function
+
+multi_color_set = color_set.union(add_color_set)
+print(multi_color_set)
+
+
+# intersection of two sets
+
+# difference of two sets that are only in color_set but not in add_color_set
+multi_color_set = color_set - add_color_set
+print(multi_color_set)
+
+# difference of two sets that are only in add_color_set but not in color_set
+multi_color_set = add_color_set - color_set
+print(multi_color_set)
+
+# same can be done via 
+multi_color_set = color_set.difference(add_color_set)
+print(multi_color_set)
+
+#
+multi_color_set = color_set.symmetric_difference(add_color_set)
+print(multi_color_set)
+
+
+# Assignment 1: Sort a group of elements in a set in descending order 
+# Assignment 2: Check if 3 strings are anagram(different strings but same set of characters & their occurences) without using temp variable
+# Assignment 3: Write a Program to find the numbers absent from a sequence of numbers e.g. [0,1,2,5] , 
+#               step should be dynamic,missing number should be located based on the step
+# Expected Output : 3,4 are missing
