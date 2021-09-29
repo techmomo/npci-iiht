@@ -1,4 +1,5 @@
 from os import name
+import os
 
 
 print("Hello")
@@ -727,13 +728,13 @@ all_nums = list(map(lambda x: x * x, all_nums))
 
 print(all_nums)
 
-# Assignment : Write a program to leverage closure / lambdas to perform - accept the choice from the user what step he wants to execute
+# Assignment 1: Write a program to leverage closure / lambdas to perform - accept the choice from the user what step he wants to execute
 #               1. add a new element to the list - take the elements from the user
 #               2. create dict from the list 
 #               3. sort dict in descending order based on value 
 
 
-# Assignment : Calculate the last 3 transaction(mini statement) done on a debit card w.r.to the amount available, 
+# Assignment 2: Calculate the last 3 transaction(mini statement) done on a debit card w.r.to the amount available, 
 #               note he cannot withdraw more than the balance & available currency notes
 #               e.g. if an atm has 100 * 2 , 200 * 3, 500 * 10 = 200 + 600 + 5000 = 5800 
 #                   the total withdrawal amount cannot be more than than 90 % of the ATM cash e.g. as per above 90% of 5800 
@@ -742,6 +743,7 @@ print(all_nums)
 #                   1. Currency in the ATM is fixed 
 #                   2. Balance for the Debit Card is predeclared
 #                   3. No of transactions to be shown is fixed to last 3
+#  
 
 dt = {}
 def get_key(value):
@@ -750,3 +752,97 @@ def get_key(value):
             return k
 
 get_key("v")
+
+
+_dicth = {1:1,2:2}
+
+# sorting a dict by value
+sortd_dict = dict(sorted(_dicth.items(),key=lambda item : item[1] ))
+sortd_dict = {key:val for key,val in sorted(_dicth.items(),key= lambda item : item[1])}
+
+# def test():
+#     return 1,"Helo"
+
+# k,v = test()
+
+for item in _dicth.items():
+    print(item[1])
+
+#Collections.sort(_dicth.entrySet(),(ob1,obj2)-> return obj1 - obj2)
+
+
+# open()
+# close()
+# write()
+
+# Mode - 
+# r - to read a file
+# w - to write to a file
+# b - read in binary format
+# a - for appending to an existing file
+# + - concat operator in case we want to perform multiple operations on a file (read + write)
+
+
+#file = open('sample.txt','r')
+
+# with keyword
+#with open('sample.txt','r', encoding='utf-8') as f:
+    # traverse via the file object 
+    # read all lines
+    # for line in file:
+    #     print(line)
+#    print(f.read())
+
+# file.write('Hello')
+# file.write('\n')
+# file.write('World')
+
+
+#print(file.read(4))
+
+
+# close a file
+#file.close()
+#print(file.readline(1))
+
+file1 = open('sample.txt','a+')
+#for line in file1:
+#    print("LINE")
+    # if file1.tell() > 9:
+    #     file1.seek(5)
+    # else:
+    #     continue
+#current file cursor location
+#print(file1.tell())
+#print(file1.readline())
+# change the position of the cursor
+#print(file1.seek(-10,2))
+print(file1.read())
+file1.seek(2)
+file1.write('\nLine4')
+#print(file1.tell())
+
+
+
+with open('sample.txt','r') as f:
+    print(f.tell())
+    with open('newsample.txt','w') as f2:
+        if f.tell() == 2:
+            f2.write("Line4")
+        f2.write(f.read())
+    #os.rename('newsample.txt','sample.txt') 
+
+
+# Assignment 3: Add a list to the file as comma separated values. 
+#                   [
+#                       [Mohsin,mm@gg.com,1283],
+#                       [Test,tt@usr.com,9999],
+#                       [UserName,email,126487,city,street ],
+#                       [],
+#                       [],
+#                       [Test,tt@usr.com,9999,houston,long street,20122] X
+#                   ]
+#               & then read the content of the file & parse that into a tuple
+# Assumption : First row of the file will have column headers
+#              List to be written can have multiple values, however first three values would be : name, email, phone_no
+#              Avoid duplicate users, 
