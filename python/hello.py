@@ -731,3 +731,22 @@ print(all_nums)
 #               1. add a new element to the list - take the elements from the user
 #               2. create dict from the list 
 #               3. sort dict in descending order based on value 
+
+
+# Assignment : Calculate the last 3 transaction(mini statement) done on a debit card w.r.to the amount available, 
+#               note he cannot withdraw more than the balance & available currency notes
+#               e.g. if an atm has 100 * 2 , 200 * 3, 500 * 10 = 200 + 600 + 5000 = 5800 
+#                   the total withdrawal amount cannot be more than than 90 % of the ATM cash e.g. as per above 90% of 5800 
+#                   (i.e. 5220 round off 5200 since we dont have 20 rs notes)
+# Assumptions : 
+#                   1. Currency in the ATM is fixed 
+#                   2. Balance for the Debit Card is predeclared
+#                   3. No of transactions to be shown is fixed to last 3
+
+dt = {}
+def get_key(value):
+    for k,v in dt.items():
+        if(v == value):
+            return k
+
+get_key("v")
