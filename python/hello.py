@@ -648,3 +648,86 @@ print(diff)
 print(prod)
 print(div)
 print(xyz)
+
+
+# Assignment 4: sort the dict based on its values 
+#               e.g. dict = {'One': 'Two','Two':'One','Five': 'Five'}
+#               Expected Output : {'Five': 'Five','Two': 'One', 'One': 'Two'}
+
+# Assignment 5: Write a Program to perform merge sort on a tuple , set , dict , list
+#               Note : we can consider string values not integers
+
+# global 
+# local variables
+# non local variables
+
+def calc(_msg,i):
+    _str = _msg
+    print('Calc ')
+    _index = i
+    def add():
+        nonlocal _index
+        _index = 1
+        print(_str)
+        print("Index: ",_index)
+    
+    return add
+
+# call outer method
+add_calc = calc('calc_add',12)
+# call returned method
+add_calc()
+
+
+# anonymous functions / lambdas
+
+add_me = lambda x,y: x + y
+
+result = add_me(10,2)
+print('SUM ',result)
+
+
+def calculate(action):
+    if action == 'SUM':
+        return lambda x,y : x + y
+    elif action == 'DIFF':
+        return lambda x,y : x - y
+    elif action == 'MUL':
+        return lambda x,y : x * y
+    else:
+        return 0
+
+add = calculate('SUM')
+print(add(9,2))
+diff = calculate('DIFF')
+print(diff(8,2))
+prod = calculate('MUL')
+print(prod(8,3))
+
+
+
+# build in functions
+# abs
+# all , any
+# callable, compile , complex
+# map, filter, dict, list, tuple, eval, globals
+# input, int, isinstance, type, len, max, min, next
+
+
+# higher order functions
+
+# filter - filter out elements meeting a particular criteria
+all_nums = [9,19,1,2,7,6,8,4,24,12]
+
+all_nums = list(filter(lambda x:x % 2 == 1,all_nums))
+print(all_nums)
+
+# transform the elements into another form
+all_nums = list(map(lambda x: x * x, all_nums))
+
+print(all_nums)
+
+# Assignment : Write a program to leverage closure / lambdas to perform - accept the choice from the user what step he wants to execute
+#               1. add a new element to the list - take the elements from the user
+#               2. create dict from the list 
+#               3. sort dict in descending order based on value 
