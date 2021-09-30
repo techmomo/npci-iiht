@@ -1,4 +1,5 @@
-from os import name
+from abc import ABC, abstractmethod
+from os import name, pardir
 import os
 
 
@@ -896,4 +897,122 @@ class Employee(User):
 emp1 = Employee("201","Emp1")
 print(Employee.user_type)
 print(emp1.get_user_info())
+
+# parent abstract class used to create abstract classes
+# annotation used to declare abstract methods
+
+# abstract class
+class Vehicle(ABC):
+
+# abstract method
+    @abstractmethod
+    def engine_info(self):
+        pass
+    # concrete method in abstract class
+    def is_automobile(self):
+        return True
+    @staticmethod
+    def calc_me():
+        return "Static"
+
+class Car(Vehicle):
+    doors = 0
+    def engine_info(self):
+        print("Car's Engine Info")
+    
+    # overriden method in child class
+    # calling super classes method
+    def is_automobile(self):
+        self.no_of_doors = 4
+        return "Child, ",super().is_automobile()
+
+    @classmethod
+    def calculate_doors(cls):
+        cls.doors = 5
+        return cls.doors
+
+    @staticmethod
+    def calc_me():
+        return "Static-Car"
+# not permitted
+#vehicle = Vehicle()
+
+car = Car()
+car.engine_info()
+
+print(car.is_automobile())
+print(Car.calculate_doors())
+
+print(Car.calc_me())
+
+
+
+# public
+# protected
+# private
+
+class Parent:
+    def __init__(self,i):
+        # has public access
+        #print('Parent called')
+        self.id = i
+        # private variable
+        # not accessible outside the class for changes
+        # not accessible via inheritance for child classes
+        self.__name = 'Parent'
+
+        # protected variable
+        self._email = 'par@ent.org'
+    def get_parent(self):
+        self.__get_name()
+        print(self.__name)
+
+    # protected method
+    def _get_email(self):
+        print(self._email)
+    # private method
+    # visible only in its own class
+    # child / outside the class is not accessible
+    def __get_name(self):
+        print(self.__name)
+
+class Child1(Parent):
+    def __init__(self, i):
+        super().__init__(i)
+    def get_id(self):
+        #super().__name = "Child"
+        # private methods or variables are not accessible outside their own class
+        #super().__get_name()
+        #print("----",super().__name)
+        print("Child1 :",self.id)
+
+parent = Parent(10)
+# can be accessed from outside the class
+parent.id = 11
+parent.__name = "New Parent"
+parent.get_parent()
+# child
+child1 = Child1(9)
+child1.id = -9
+child1.get_id()
+
+# protected
+child1._email = "ee"
+parent.get_parent()
+child1._get_email()
+
+
+# Assignment 1: sort the users in a project based on their salary 
+#               [list of projects] 
+#               project = [list of users]
+# project : id , name , users[]
+# user : id , name , salary
+
+# Expectation:
+#               e.g. [ p1,p2,p3]
+#                       p1{u1{salary:100},u2{salary:400}}, p2{u3{salary:2000}}
+#               1. Sort only users with the project , retain the place for the project : [ p1{u2{salary:400},u1{salary:100}},p2{u3{salary:2000}}]
+#               2. explode the projects & sort all users based on their salaries: [ p2{u3{salary:2000}},p2{u2{salary:400},u1{salary:100}}}]
+#               3. create a dict with project id as key & value as project with its sorted users in it: {p2: [p2], p1: [p1]}
+
 
