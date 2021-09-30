@@ -1015,4 +1015,17 @@ child1._get_email()
 #               2. explode the projects & sort all users based on their salaries: [ p2{u3{salary:2000}},p2{u2{salary:400},u1{salary:100}}}]
 #               3. create a dict with project id as key & value as project with its sorted users in it: {p2: [p2], p1: [p1]}
 
+# Assumption : 1 user in 1 project only
 
+# user : id , name , salary, designation, message : "OVER UTILISED / UNDER UTILISED ", 
+# project : id, name, users[]
+# project efforts %: e.g. user1 : -> p1 : efforts[30%] , p2 : efforts[20%], 
+
+# Part 2:       
+#               1. transform list of projects into list of employees , grouped by emp id e.g. {eid: [projects employee is working in ]}
+#               2. Over all efforts invested by an employee in all the projects cannot go more than 100 %
+#               3. If efforts go less than 50 % across all the projects it will be under utilised
+#               4. If efforts go more than 100 & across all the projects it be over utilised
+#     
+
+# Assumption : 1 user multiple projects
