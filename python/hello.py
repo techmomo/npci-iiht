@@ -733,7 +733,6 @@ print(all_nums)
 #               2. create dict from the list 
 #               3. sort dict in descending order based on value 
 
-
 # Assignment 2: Calculate the last 3 transaction(mini statement) done on a debit card w.r.to the amount available, 
 #               note he cannot withdraw more than the balance & available currency notes
 #               e.g. if an atm has 100 * 2 , 200 * 3, 500 * 10 = 200 + 600 + 5000 = 5800 
@@ -805,7 +804,7 @@ for item in _dicth.items():
 #file.close()
 #print(file.readline(1))
 
-file1 = open('sample.txt','a+')
+# file1 = open('sample.txt','a+')
 #for line in file1:
 #    print("LINE")
     # if file1.tell() > 9:
@@ -817,19 +816,22 @@ file1 = open('sample.txt','a+')
 #print(file1.readline())
 # change the position of the cursor
 #print(file1.seek(-10,2))
-print(file1.read())
-file1.seek(2)
-file1.write('\nLine4')
+# print(file1.read())
+# file1.seek(2)
+# file1.write('\nLine4')
 #print(file1.tell())
 
+# f11 = open('sample,txt','r')
+# f12 = open('sample.txt','w')
+# f13 = open('sample.txt','a')
 
-
-with open('sample.txt','r') as f:
-    print(f.tell())
-    with open('newsample.txt','w') as f2:
-        if f.tell() == 2:
-            f2.write("Line4")
-        f2.write(f.read())
+# # reader / writer at same level via with statement
+# with open('sample.txt','r') as f, open('sample.txt','w') as writer:
+#     print(f.tell())
+#     with open('newsample.txt','w') as f2:
+#         if f.tell() == 2:
+#             f2.write("Line4")
+#         f2.write(f.read())
     #os.rename('newsample.txt','sample.txt') 
 
 
@@ -846,3 +848,52 @@ with open('sample.txt','r') as f:
 # Assumption : First row of the file will have column headers
 #              List to be written can have multiple values, however first three values would be : name, email, phone_no
 #              Avoid duplicate users, 
+
+
+# class is a blueprint
+class User:
+    # class level variables
+    # they flow in the same copy across all the objects
+    user_type = "user"
+
+    def __init__(self,id,name):
+        print('Hello how r u')
+        self.y = id
+        #self.id = id # instance variable 
+        self.name = name
+
+    def get_user_info(self):
+        self.username = "techM"
+        return "Id :", self.y ,"Name :",self.name 
+
+    def get_name(self):
+        return self.username
+
+# create object
+usr1 = User(1,'User1')
+usr2 = User(2,'User2')
+print(usr1.user_type)
+#usr1.user_type = "employee"
+print(usr1.get_user_info())
+
+usr1.__class__.user_type = "employee"
+User.user_type = "User-1"
+
+print(usr2.user_type)
+usr1.name = 'Test'
+print(usr2.get_user_info())
+print(usr2.get_name())
+
+
+class Employee(User):
+
+    def __init__(self,id,name):
+        # call the parent class constructor from child class
+        print('Employee class')
+        super().__init__(id,name)    
+
+
+emp1 = Employee("201","Emp1")
+print(Employee.user_type)
+print(emp1.get_user_info())
+
